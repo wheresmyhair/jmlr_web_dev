@@ -14,6 +14,8 @@ npm: clean
 	mkdir -p output/beta/format
 	mkdir -p output/special_issues
 	mkdir -p output/beta/special_issues
+	mkdir -p output/openreview_instructions
+	mkdir -p output/beta/openreview_instructions
 	cp node_modules/mdbootstrap/js/*.* output/beta/js/
 	cp node_modules/mdbootstrap/css/*.* output/beta/css/
 	curl 'https://jmlr.csail.mit.edu/manudb/editorial_board?list=action' -o templates/aes.html

@@ -25,6 +25,9 @@ def render_webpage(env, prefix, page, base_url, template_kw):
             home_active=(page == "index.html"),
             editorial_board_active=(page == "editorial-board.html"),
             stats_active=(page == "stats.html"),
+            openreview_instructions_active=("openreview_instructions/" in page),
+            openreview_author_active=(page == "openreview_instructions/author-guide.html"),
+            openreview_reviewer_active=(page == "openreview_instructions/reviewer-guide.html"),
             submissions_active=(
                 page == "author-info.html" 
                 or page == "format/authors-guide.html"
@@ -186,6 +189,8 @@ if __name__ == "__main__":
                 "special_issues/list.html",
                 "special_issues/nomination.html",
                 "special_issues/climate_change.html",
+                "openreview_instructions/author-guide.html",
+                "openreview_instructions/reviewer-guide.html",
         ]:
             render_webpage(env, prefix, page, base_url, {})
 

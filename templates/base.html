@@ -78,6 +78,16 @@ ul li {
     <p align='right' style='position: relative; left: 1.5em; font-size: 90%; margin: 0.2em'><a href="/reviewer-guide.html"> {% if reviewers_guide_active %}<u>{% endif %} Reviewer Guide {% if reviewers_guide_active %}</u>{% endif %} </a></p>
     {% endif %}
 
+  <p align="right" {% if openreview_instructions_active %}style="margin-bottom: 0"{% endif %}> <A href="/openreview_instructions/author-guide.html"> {% if openreview_instructions_active %}<b>{% endif %} OpenReview Instructions {% if openreview_instructions_active %}</b>{% endif %} </A> 
+  {% if openreview_instructions_active %}
+      <p align='right' style='position: relative; left: 1.5em; font-size: 90%; margin: 0.2em'>
+      <a href="/openreview_instructions/author-guide.html"> {% if openreview_author_active %}<u>{% endif %} Author Guide {% if openreview_author_active %}</u>{% endif %}</a>
+      </p>
+      <p align='right' style='position: relative; left: 1.5em; font-size: 90%; margin: 0.2em'>
+      <a href="/openreview_instructions/reviewer-guide.html"> {% if openreview_reviewer_active %}<u>{% endif %} Reviewer Guide {% if openreview_reviewer_active %}</u>{% endif %}</a>
+      </p>
+  {% endif %}
+
   <p align="right"> <A href="/news.html"> News </A> 
 
   <!--<p align="right"> <A href="/scope.html"> Scope </A>-->
