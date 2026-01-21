@@ -3,77 +3,111 @@
 {% block content %}
 <div id="content">
 
-    <h1>JMLR OpenReview Instructions (Author)</h1>
+    <h1 id="top">JMLR OpenReview Instructions (Author)</h1>
 
-    <h2>Overview</h2>
+    <!-- Table of Contents -->
+    <div style="background: #f8f8f8; padding: 1em 1.5em; margin-bottom: 2em; border-left: 3px solid #ccc;">
+        <strong>Contents</strong>
+        <ul style="margin: 0.5em 0 0 0; padding-left: 1.5em;">
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#submitting">Submitting Papers</a></li>
+            <li><a href="#camera-ready">Camera Ready Revision</a></li>
+            <li><a href="#revisions">Revisions</a></li>
+            <li><a href="#checklist">Camera Ready Revision Checklist</a>
+                <ul style="padding-left: 1.5em;">
+                    <li><a href="#checklist-package">Submission Package</a></li>
+                    <li><a href="#checklist-metadata">Header &amp; Metadata</a></li>
+                    <li><a href="#checklist-deanon">De-anonymization</a></li>
+                    <li><a href="#checklist-formatting">Formatting &amp; Assets</a></li>
+                </ul>
+            </li>
+            <li><a href="#withdrawal">Withdrawal/Retraction</a></li>
+            <li><a href="#optional">Optional Features</a>
+                <ul style="padding-left: 1.5em;">
+                    <li><a href="#official-comment">Official Comment</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <h2 id="overview">Overview</h2>
     <p>
         You can find a link to your author console under "Active Consoles" on the OpenReview homepage after you have submitted a paper successfully. Use this page to access JMLR consoles.
     </p>
-    <img src="/img/openreview/author-console-link.png" alt="OpenReview Active Consoles showing author console link" style="max-width: 100%; border: 1px solid #ddd; margin: 1em 0;">
+    <img src="/img/openreview/author-console-link.png" alt="OpenReview Active Consoles showing author console link" style="display: block; max-width: 50%; border: 1px solid #ddd; margin: 1em 0;">
 
     <p>You could find all of your papers and tasks at the console.</p>
-    <img src="/img/openreview/author-console-overview.png" alt="Author console overview" style="max-width: 100%; border: 1px solid #ddd; margin: 1em 0;">
+    <img src="/img/openreview/author-console-overview.png" alt="Author console overview" style="display: block; max-width: 50%; border: 1px solid #ddd; margin: 1em 0;">
+    <p style="text-align: right; font-size: 90%;"><a href="#top">↑ Back to top</a></p>
 
-    <h2>Submitting Papers</h2>
+    <h2 id="submitting">Submitting Papers</h2>
     <p>
         Search for "Journal of Machine Learning Research" or "JMLR" to navigate to JMLR's main page. Submit your paper by clicking "JMLR Submission".
     </p>
-    <img src="/img/openreview/author-jmlr-submission.png" alt="JMLR submission button on OpenReview" style="max-width: 100%; border: 1px solid #ddd; margin: 1em 0;">
+    <img src="/img/openreview/author-jmlr-submission.png" alt="JMLR submission button on OpenReview" style="display: block; max-width: 50%; border: 1px solid #ddd; margin: 1em 0;">
 
     <p>
         Fill the fields to submit. For more information and instructions, please refer to <a href="https://jmlr.org/">https://jmlr.org/</a>.
     </p>
-    <img src="/img/openreview/author-submission-form.png" alt="Paper submission form" style="max-width: 100%; border: 1px solid #ddd; margin: 1em 0;">
+    <img src="/img/openreview/author-submission-form.png" alt="Paper submission form" style="display: block; max-width: 50%; border: 1px solid #ddd; margin: 1em 0;">
+    <p style="text-align: right; font-size: 90%;"><a href="#top">↑ Back to top</a></p>
 
-    <h2>Camera Ready Revision</h2>
+    <h2 id="camera-ready">Camera Ready Revision</h2>
     <p>
         After EIC makes the final decision, authors need to upload the camera ready revision. You may find the upload portal at the submission page after clicking the edit button.
     </p>
-    <img src="/img/openreview/author-camera-ready-upload.png" alt="Camera ready revision upload portal" style="max-width: 100%; border: 1px solid #ddd; margin: 1em 0;">
+    <img src="/img/openreview/author-camera-ready-upload.png" alt="Camera ready revision upload portal" style="display: block; max-width: 50%; border: 1px solid #ddd; margin: 1em 0;">
+    <p style="text-align: right; font-size: 90%;"><a href="#top">↑ Back to top</a></p>
 
-    <h2>Revisions</h2>
+    <h2 id="revisions">Revisions</h2>
     <p>You could find all of your revisions on the submission page.</p>
-    <img src="/img/openreview/author-revisions-list.png" alt="List of revisions on submission page" style="max-width: 100%; border: 1px solid #ddd; margin: 1em 0;">
+    <img src="/img/openreview/author-revisions-list.png" alt="List of revisions on submission page" style="display: block; max-width: 50%; border: 1px solid #ddd; margin: 1em 0;">
+    <p style="text-align: right; font-size: 90%;"><a href="#top">↑ Back to top</a></p>
 
-    <h2>Camera Ready Revision Checklist</h2>
+    <h2 id="checklist">Camera Ready Revision Checklist</h2>
 
-    <h3>1. Submission Package (Mandatory)</h3>
+    <h3 id="checklist-package">1. Submission Package (Mandatory)</h3>
     <ul>
         <li><strong>Format:</strong> The submission must be a <strong>single ZIP file</strong>.</li>
         <li><strong>Contents:</strong> The ZIP file must contain both the <strong>compiled PDF</strong> and the <strong>complete LaTeX source files</strong> (including <code>.tex</code>, <code>.bib</code>, style files, and all figure files).</li>
     </ul>
 
-    <h3>2. Header &amp; Metadata (Mandatory)</h3>
+    <h3 id="checklist-metadata">2. Header &amp; Metadata (Mandatory)</h3>
     <ul>
         <li><strong>Publication Date:</strong> Ensure the <strong>Year</strong> and <strong>Month</strong> in the paper header are updated to match the acceptance date (or the date specified by the Action Editor).</li>
         <li><strong>Title &amp; Abstract:</strong> The title and abstract in the PDF must <strong>exactly match</strong> the metadata entered in the OpenReview system (as this will be used for indexing).</li>
     </ul>
 
-    <h3>3. De-anonymization</h3>
+    <h3 id="checklist-deanon">3. De-anonymization</h3>
     <ul>
         <li><strong>Author Names:</strong> Ensure the <code>\anonymous</code> option is removed so that author names and affiliations are visible.</li>
         <li><strong>Acknowledgments:</strong> Un-hide the Acknowledgments section (funding, reviewer thanks) if it was previously hidden for blind review.</li>
     </ul>
 
-    <h3>4. Formatting &amp; Assets</h3>
+    <h3 id="checklist-formatting">4. Formatting &amp; Assets</h3>
     <ul>
         <li><strong>High-Quality Figures:</strong> Ensure all images are vector graphics (PDF/EPS) or high-resolution bitmaps (300dpi+).</li>
         <li><strong>Bibliography:</strong> Check for and fix any undefined references (e.g., <code>[?]</code> or <code>(??)</code>).</li>
     </ul>
 
     <p>Please refer to our writing sample: <a href="https://github.com/JmlrOrg/jmlr-style-file/blob/master/sample.pdf">https://github.com/JmlrOrg/jmlr-style-file/blob/master/sample.pdf</a></p>
+    <p style="text-align: right; font-size: 90%;"><a href="#top">↑ Back to top</a></p>
 
-    <h2>Withdrawal/Retraction</h2>
+    <h2 id="withdrawal">Withdrawal/Retraction</h2>
     <p>You could find the withdrawal/retraction button on the submission page.</p>
-    <img src="/img/openreview/author-withdrawal-button.png" alt="Withdrawal/Retraction button" style="max-width: 100%; border: 1px solid #ddd; margin: 1em 0;">
-    <img src="/img/openreview/author-retraction-button.png" alt="Withdrawal/Retraction form" style="max-width: 100%; border: 1px solid #ddd; margin: 1em 0;">
+    <img src="/img/openreview/author-withdrawal-button.png" alt="Withdrawal/Retraction button" style="display: block; max-width: 50%; border: 1px solid #ddd; margin: 1em 0;">
+    <img src="/img/openreview/author-retraction-button.png" alt="Withdrawal/Retraction form" style="display: block; max-width: 50%; border: 1px solid #ddd; margin: 1em 0;">
+    <p style="text-align: right; font-size: 90%;"><a href="#top">↑ Back to top</a></p>
 
-    <h2>Official Comment</h2>
+    <h2 id="optional">Optional Features</h2>
+
+    <h3 id="official-comment">Official Comment</h3>
     <p>You could comment on almost every note and decision. Please comment correspondingly.</p>
-    <img src="/img/openreview/official-comment-button.png" alt="Official comment button" style="max-width: 100%; border: 1px solid #ddd; margin: 1em 0;">
+    <img src="/img/openreview/official-comment-button.png" alt="Official comment button" style="display: block; max-width: 50%; border: 1px solid #ddd; margin: 1em 0;">
 
     <p>Remember to indicate the readers of your comment.</p>
-    <img src="/img/openreview/official-comment-readers.png" alt="Selecting readers for official comment" style="max-width: 100%; border: 1px solid #ddd; margin: 1em 0;">
+    <img src="/img/openreview/official-comment-readers.png" alt="Selecting readers for official comment" style="display: block; max-width: 50%; border: 1px solid #ddd; margin: 1em 0;">
+    <p style="text-align: right; font-size: 90%;"><a href="#top">↑ Back to top</a></p>
 
 </div>
 {% endblock %}

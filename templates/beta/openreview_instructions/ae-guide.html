@@ -1,0 +1,161 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div id="content">
+
+    <h1 id="top">JMLR OpenReview Instructions (AE)</h1>
+
+    <!-- Table of Contents -->
+    <div style="background: #f8f8f8; padding: 1em 1.5em; margin-bottom: 2em; border-left: 3px solid #ccc;">
+        <strong>Contents</strong>
+        <ul style="margin: 0.5em 0 0 0; padding-left: 1.5em;">
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#recruiting">Recruiting Reviewers</a></li>
+            <li><a href="#view-reviewers">View Available Reviewers</a></li>
+            <li><a href="#receiving-tasks">After Receiving Review Tasks</a></li>
+            <li><a href="#assigning">Assigning Reviewers</a></li>
+            <li><a href="#waiting">Waiting for Reviews</a></li>
+            <li><a href="#force-release">Force Release Reviews</a></li>
+            <li><a href="#rating">Rating the Reviews</a></li>
+            <li><a href="#decision">Decision</a></li>
+            <li><a href="#camera-ready">Camera Ready Verification</a></li>
+            <li><a href="#optional">Optional Features</a>
+                <ul style="padding-left: 1.5em;">
+                    <li><a href="#official-comment">Official Comment</a></li>
+                    <li><a href="#report-reviewer">Report a Reviewer</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <h2 id="overview">Overview</h2>
+    <p>
+        After being invited, you can find a link to your AE console under "Active Consoles" on the OpenReview homepage after you have logged into your account. Use this page to access JMLR committee consoles.
+    </p>
+    <img src="/img/openreview/ae-console-link.png" alt="OpenReview Active Consoles showing AE console link" style="display: block; max-width: 50%; border: 1px solid #ddd; margin: 1em 0;">
+
+    <p>You could find all of the contents at the console, including recruit reviewers, assigned papers, etc.</p>
+    <img src="/img/openreview/ae-console-overview.png" alt="AE console overview" style="display: block; max-width: 50%; border: 1px solid #ddd; margin: 1em 0;">
+    <p style="text-align: right; font-size: 90%;"><a href="#top">↑ Back to top</a></p>
+
+    <h2 id="recruiting">Recruiting Reviewers</h2>
+    <p>AE could recruit reviewers at the OpenReview console, or invite reviewers when assigning.</p>
+
+    <p><strong>Approach 1. Recruit at console:</strong></p>
+    <img src="/img/openreview/ae-recruit-button.png" alt="Recruit reviewers button" style="display: block; max-width: 50%; border: 1px solid #ddd; margin: 1em 0;">
+
+    <p>Click the recruit button and follow the instructions to recruit. The OpenReview system will automatically send email to the invitee.</p>
+    <img src="/img/openreview/ae-recruit-form.png" alt="Recruit reviewers form" style="display: block; max-width: 50%; border: 1px solid #ddd; margin: 1em 0;">
+
+    <p><strong>Approach 2. Invite when assigning reviewers:</strong></p>
+    <img src="/img/openreview/ae-invite-when-assigning.png" alt="Invite reviewer when assigning" style="display: block; max-width: 50%; border: 1px solid #ddd; margin: 1em 0;">
+
+    <p><em>Note: The invitee will serve as a reviewer for this specific paper rather than become one of the JMLR regular reviewers. If you want to do so, please invite by recruiting.</em></p>
+    <p style="text-align: right; font-size: 90%;"><a href="#top">↑ Back to top</a></p>
+
+    <h2 id="view-reviewers">View Available Reviewers</h2>
+    <p>AE could browse the recruitment status of the reviewers at the bottom of the reviewer recruitment page.</p>
+    <img src="/img/openreview/ae-reviewer-list.png" alt="Reviewer recruitment status" style="display: block; max-width: 50%; border: 1px solid #ddd; margin: 1em 0;">
+
+    <p>Feel free to use the filters to sort out reviewers recruited by a specific AE.</p>
+    <img src="/img/openreview/ae-reviewer-filter-1.png" alt="Reviewer filter options" style="display: block; max-width: 50%; border: 1px solid #ddd; margin: 1em 0;">
+    <img src="/img/openreview/ae-reviewer-filter-2.png" alt="Reviewer filter results" style="display: block; max-width: 50%; border: 1px solid #ddd; margin: 1em 0;">
+    <p style="text-align: right; font-size: 90%;"><a href="#top">↑ Back to top</a></p>
+
+    <h2 id="receiving-tasks">After Receiving Review Tasks</h2>
+    <p>After EIC assigns the submission to AE, AE should first do the review approval.</p>
+    <img src="/img/openreview/ae-review-approval-button.png" alt="Review approval button" style="display: block; max-width: 50%; border: 1px solid #ddd; margin: 1em 0;">
+    <img src="/img/openreview/ae-review-approval-form.png" alt="Review approval form" style="display: block; max-width: 50%; border: 1px solid #ddd; margin: 1em 0;">
+
+    <p>If AE submits the review approval with a "Desk Reject", EIC will receive another approval for this desk rejection.</p>
+    <p style="text-align: right; font-size: 90%;"><a href="#top">↑ Back to top</a></p>
+
+    <h2 id="assigning">Assigning Reviewers</h2>
+    <p>After the review approval, AE could assign the reviewers through "Edit Assignments".</p>
+    <img src="/img/openreview/ae-edit-assignments.png" alt="Edit Assignments button" style="display: block; max-width: 50%; border: 1px solid #ddd; margin: 1em 0;">
+
+    <p>When the reviewer you want to assign is not on the list, try to uncheck "Show reviewers available for assignment".</p>
+    <img src="/img/openreview/ae-show-all-reviewers.png" alt="Show all reviewers checkbox" style="display: block; max-width: 50%; border: 1px solid #ddd; margin: 1em 0;">
+
+    <p>Also, uncheck "Show reviewers available for assignment" to see the reviewers you have already assigned. Click the trashcan icon to undo the assignment.</p>
+    <img src="/img/openreview/ae-undo-assignment.png" alt="Undo reviewer assignment" style="display: block; max-width: 50%; border: 1px solid #ddd; margin: 1em 0;">
+    <p style="text-align: right; font-size: 90%;"><a href="#top">↑ Back to top</a></p>
+
+    <h2 id="waiting">Waiting for Reviews</h2>
+    <p>AE will receive an email notification once all reviews are submitted. However, we recommend AE to check the review status regularly and notify the reviewer if necessary.</p>
+    <!-- TODO: screenshot of email -->
+    <p style="text-align: right; font-size: 90%;"><a href="#top">↑ Back to top</a></p>
+
+    <h2 id="force-release">Force Release Reviews</h2>
+    <p>
+        By default, reviews are released automatically once all the reviews are submitted. In some circumstances (e.g., to bypass an overdue or unreachable reviewer), AE may need to proceed with partial feedback. This forces the release of all available reviews without waiting for the remaining reports. This function is triggered via an <strong>Official Comment</strong>.
+    </p>
+
+    <p>
+        <strong>Important Requirement:</strong> To trigger this function successfully, you must post the Official Comment directly on the Submission itself. Do not post this as a reply to an existing review or another comment; nested comments will be ignored by the system.
+    </p>
+
+    <p><strong>Instructions:</strong></p>
+    <ol>
+        <li>Navigate to the specific submission page.</li>
+        <li>Click the <strong>Official Comment</strong> button located directly under the submission title/abstract.</li>
+        <li>In the comment form, scroll to the field labeled <strong>Action Editor Control Option</strong>.</li>
+        <li>Click the input box to reveal the dropdown menu.</li>
+        <li>Select: <strong>"Release all the reviews, regardless of how many reviews have been submitted."</strong></li>
+        <li>Submit the comment. The system will process this command and release all currently available reviews to the authors.</li>
+    </ol>
+    <img src="/img/openreview/ae-force-release.png" alt="Force release reviews via Official Comment" style="display: block; max-width: 50%; border: 1px solid #ddd; margin: 1em 0;">
+    <p style="text-align: right; font-size: 90%;"><a href="#top">↑ Back to top</a></p>
+
+    <h2 id="rating">Rating the Reviews</h2>
+    <p>
+        Once all reviewers have submitted their reports and recommendations, the AE must rate the quality of each review. Please note that this step is mandatory; the decision button will not be available until all review ratings are complete.
+    </p>
+    <img src="/img/openreview/ae-rating-button.png" alt="Review rating button" style="display: block; max-width: 50%; border: 1px solid #ddd; margin: 1em 0;">
+    <img src="/img/openreview/ae-rating-form.png" alt="Review rating form" style="display: block; max-width: 50%; border: 1px solid #ddd; margin: 1em 0;">
+    <p style="text-align: right; font-size: 90%;"><a href="#top">↑ Back to top</a></p>
+
+    <h2 id="decision">Decision</h2>
+    <p>After rating the reviews, AE could make the final decision on the submission.</p>
+    <img src="/img/openreview/ae-decision-button.png" alt="Decision button" style="display: block; max-width: 50%; border: 1px solid #ddd; margin: 1em 0;">
+    <img src="/img/openreview/ae-decision-form.png" alt="Decision form" style="display: block; max-width: 50%; border: 1px solid #ddd; margin: 1em 0;">
+
+    <p>The decision requires EIC's approval.</p>
+    <p style="text-align: right; font-size: 90%;"><a href="#top">↑ Back to top</a></p>
+
+    <h2 id="camera-ready">Camera Ready Verification</h2>
+    <p>Please review the materials after the authors submit their camera-ready revision.</p>
+
+    <p>
+        As part of this final check, please help us ensure the accuracy of the dates. Specifically, verify that the Year and Month in the paper header and the copyright footnote (page 1) correspond to the actual acceptance date.
+    </p>
+    <img src="/img/openreview/ae-camera-ready-task.png" alt="Camera ready task" style="display: block; max-width: 50%; border: 1px solid #ddd; margin: 1em 0;">
+    <img src="/img/openreview/ae-camera-ready-revision-button.png" alt="Camera ready button" style="display: block; max-width: 50%; border: 1px solid #ddd; margin: 1em 0;">
+    <img src="/img/openreview/ae-camera-ready-revision-list.png" alt="Version history" style="display: block; max-width: 50%; border: 1px solid #ddd; margin: 1em 0;">
+
+    <p>Confirm the edits by clicking "Camera Ready Verification" and submit the verification.</p>
+    <img src="/img/openreview/ae-camera-ready-submit.png" alt="Camera Ready Verification button" style="display: block; max-width: 50%; border: 1px solid #ddd; margin: 1em 0;">
+
+    <p>Then the paper is officially accepted. The accepted edit will also appear in the revisions.</p>
+    <img src="/img/openreview/ae-paper-accepted.png" alt="Paper accepted confirmation" style="display: block; max-width: 50%; border: 1px solid #ddd; margin: 1em 0;">
+    <p style="text-align: right; font-size: 90%;"><a href="#top">↑ Back to top</a></p>
+
+    <h2 id="optional">Optional Features</h2>
+
+    <h3 id="official-comment">Official Comment</h3>
+    <p>You could comment on almost every note and decision. Please comment correspondingly.</p>
+    <img src="/img/openreview/official-comment-button.png" alt="Official comment button" style="display: block; max-width: 50%; border: 1px solid #ddd; margin: 1em 0;">
+
+    <p>Remember to indicate the readers of your comment.</p>
+    <img src="/img/openreview/official-comment-readers.png" alt="Selecting readers for official comment" style="display: block; max-width: 50%; border: 1px solid #ddd; margin: 1em 0;">
+
+    <h3 id="report-reviewer">Report a Reviewer</h3>
+    <p>If necessary, AE could report an irresponsible reviewer through the OpenReview console.</p>
+    <img src="/img/openreview/ae-report-reviewer-button.png" alt="Report reviewer button" style="display: block; max-width: 50%; border: 1px solid #ddd; margin: 1em 0;">
+
+    <p>Click the report button and fill the fields to report.</p>
+    <img src="/img/openreview/ae-report-reviewer-form.png" alt="Report reviewer form" style="display: block; max-width: 50%; border: 1px solid #ddd; margin: 1em 0;">
+    <p style="text-align: right; font-size: 90%;"><a href="#top">↑ Back to top</a></p>
+
+</div>
+{% endblock %}
