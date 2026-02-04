@@ -38,6 +38,7 @@ def render_webpage(env, prefix, page, base_url, template_kw):
                 or page == "openreview_instructions/author-guide.html"
                 or page == "openreview_instructions/reviewer-guide.html"
                 or page == "openreview_instructions/ae-guide.html"
+                or page == "openreview_instructions/overview.html"
             ),
             standard_submissions_active=(
                 page == "author-info.html" 
@@ -203,6 +204,7 @@ if __name__ == "__main__":
                 "openreview_instructions/author-guide.html",
                 "openreview_instructions/reviewer-guide.html",
                 "openreview_instructions/ae-guide.html",
+                "openreview_instructions/overview.html",
         ]:
             render_webpage(env, prefix, page, base_url, {})
 
